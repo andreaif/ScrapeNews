@@ -26,9 +26,6 @@ app.engine('handlebars', exphbs({
 }));
 app.set('view engine', 'handlebars');
 
-//DB Config
-const database = require('./config/keys').mongoURI;
-
 //Connect to MongoDB
 mongoose
   .connect(database, { useNewUrlParser: true })
